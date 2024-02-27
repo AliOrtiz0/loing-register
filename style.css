@@ -23,9 +23,9 @@ main {
 
 .contenedor__todo {
     width: 100%;
+    max-width: 800px;
     margin: auto;
     position: relative;
-    max-width: 800px;
 }
 
 .caja__trasera {
@@ -33,11 +33,74 @@ main {
     padding: 10px 20px;
     display: flex;
     justify-content: center;
-    backdrop-filter: white(10px);
+    backdrop-filter: pink(10px);
     background-color: rgb(241, 78, 105);
 }
 
 .caja__trasera div{
-    margin: 100px 40px;
+    margin: 50px 20px;
+    color: bisque;
+    transition: all 500ms;
+}
 
+.caja__trasera div p,
+.caja__trasera div button {
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover {
+    background: #fff;
+    color: pink;
+}
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: pink;
+}
+
+.contenedor__login-register form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    
 }
