@@ -30,16 +30,16 @@ main {
 
 .caja__trasera {
     width: 100%;
-    padding: 10px 20px;
+    padding: 50px 50px;
     display: flex;
     justify-content: center;
-    backdrop-filter: pink(10px);
-    background-color: rgb(241, 78, 105);
+    backdrop-filter: blur(10px);
+    background-color: rgb(23, 196, 226);
 }
 
 .caja__trasera div{
     margin: 50px 20px;
-    color: bisque;
+    color: rgb(224, 35, 66);
     transition: all 500ms;
 }
 
@@ -102,5 +102,53 @@ main {
     border: none;
     background: #f2f2f2;
     font-size: 16px;
-    
+    outline: none;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: pink;
+    cursor: pointer;
+    outline: none;
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+
+.formulario__register{
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    main{
+        margin-top:  50px;
+    }
+
+    .caja__trasera {
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+
+    }
 }
